@@ -45,9 +45,7 @@
 	    	"content" : "<b>Test of bold text</b>.\n<i>Test of italicized text</i>.\n<u>Test of underlined test</u>.",
 			"type" : "ScheduleRepeating",
 			"offsetFromDesiredTime" : {
-				"days" : 1,
-				"hours" : 2,
-				"minutes" : 30
+				"days" : 1
 	    	},
 			"interval" : {
 				"days" : 1
