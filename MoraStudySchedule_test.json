@@ -47,6 +47,9 @@
 			"offsetFromDesiredTime" : {
 				"days" : 1
 	    	},
+			"lifetime" : {
+				"hours" : 12
+			},
 			"interval" : {
 				"days" : 1
 			}
