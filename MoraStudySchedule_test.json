@@ -1,0 +1,148 @@
+﻿{
+    "id" : "Test Schedule",
+    "title" : "Test_Schedule",
+    "removalSettings" : {
+		"title" : "Test Schedule Removal",
+		"description" : "Removing this will kill all reminders from the test schedule",
+		"phrase" : "abc"
+	},
+    "configurations" : {
+        "fields" : [
+            {
+                "id" : "SUBJECT_ID",
+                "displayName" : "Subject ID Here",
+                "defaultValue" : "1"
+            }
+        ],
+        "displayOrder" : [
+            "SUBJECT_ID"
+        ]
+    },
+    "links" : [
+        {
+            "id" : "SURVEY",
+            "url" : "http://www.google.com/survey"
+        }
+    ],
+    "notifications" : [
+        {
+            "id" : "FirstNotification",
+            "title" : "This is your first notification!",
+            "description" : "Initial notification is available",
+            "content" : "<size=+8><align=center>Hi and welcome to the study!</align></size>\nFrom time to time this app will display reminders to be sure to use your assigned app, and to complete your weekly assessments.  The assessments won’t take very long and once completed, it triggers our payment process, so it is important that you complete them fully.  Right now, let’s start with the BASELINE ASSESSMENT.\n\n<align=center>Take note of your ID number:</align>\n<align=center><size=+18><b><#80ff80><<SUBJECT_ID>></color></b></size></align>\n<align=center>Tap this</align>\n<align=center><link=\"SURVEY\"><size=+18><#80ff80><u>Survey Link</u></color></size></link></align>\n<align=center>and enter in your ID number</align>\n\nThen complete the measures and you’ll be all ready to continue with the study. If you have questions, ask any of the study staff who are with you right now.",
+			"type" : "ScheduleOnce",
+			"offsetFromStartTime" : {
+                "minutes" : 0
+            },
+			"lifetime" : {
+				"hours" : 2
+			}
+        },
+		{
+            "id" : "Reminder",
+            "title" : "Study Reminder",
+            "description" : "Please be reminded",
+            "content" : "<b>Test of bold text</b>.\n<i>Test of italicized text</i>.\n<u>Test of underlined test</u>.",
+			"type" : "ScheduleRepeating",
+			"offsetFromDesiredTime" : {
+                "days" : 1
+                "hours" : 2
+                "minutes" : 30
+            },
+			"interval" : {
+				"days" : 1
+			}
+        },
+        /*{
+            "id" : "Day2Example",
+            "title" : "2 Days Have Passed",
+            "description" : "This is a example notification. It should show up two days after the schedule was started.",
+            "content" : "Two days have passed.",
+            "type" : "ScheduleOnce",
+			"offsetFromDesiredTime" : {
+                "days" : 2
+            },
+			"lifetime" : {
+				"days" : 1
+			}
+        },
+        {
+            "id" : "Day4Example",
+            "title" : "4 Days Have Passed",
+            "description" : "This is a example notification. It should show up four days after the schedule was started.",
+            "content" : "Four days have passed.",
+			"type" : "ScheduleOnce",
+			"offsetFromDesiredTime" : {
+                "days" : 2
+            },
+			"lifetime" : {
+				"days" : 1
+			}
+        },
+        {
+            "id" : "Hours1",
+            "title" : "1 Hour Has Passed",
+            "description" : "This is a example notification",
+            "content" : "This is the complete content for the in app view of the available action",
+            "type" : "ScheduleOnce",
+            "offsetFromStartTime" : {
+                "hours" : 1
+            },
+			"lifetime" : {
+				"hours" : 1
+			}
+        },
+        {
+            "id" : "Hours2",
+            "title" : "2 Hour Have Passed",
+            "description" : "This is a example notification",
+            "content" : "This is the complete content for the in app view of the available action",
+            "type" : "ScheduleOnce",
+            "offsetFromStartTime" : {
+                "hours" : 2
+            },
+			"lifetime" : {
+				"hours" : 2
+			}
+        },
+        {
+            "id" : "Hours3",
+            "title" : "3 Hour Have Passed",
+            "description" : "This is a example notification",
+            "content" : "This is the complete content for the in app view of the available action",
+            "type" : "ScheduleOnce",
+            "offsetFromStartTime" : {
+                "hours" : 3
+            },
+			"lifetime" : {
+				"hours" : 3
+			}
+        },
+        {
+            "id" : "Hours4",
+            "title" : "4 Hour Have Passed",
+            "description" : "This is a example notification",
+            "content" : "This is the complete content for the in app view of the available action",
+            "type" : "ScheduleOnce",
+            "offsetFromStartTime" : {
+                "hours" : 4
+            },
+			"lifetime" : {
+				"hours" : 4
+			}
+        },
+        {
+            "id" : "Hours5",
+            "title" : "5 Hour Have Passed",
+            "description" : "This is a example notification",
+            "content" : "This is the complete content for the in app view of the available action",
+            "type" : "ScheduleOnce",
+            "offsetFromStartTime" : {
+                "hours" : 5
+            },
+			"lifetime" : {
+				"hours" : 5
+			}
+        }*/
+    ]
+}
