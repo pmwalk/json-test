@@ -42,7 +42,7 @@
 	    	"id" : "Reminder",
 	    	"title" : "Study Reminder",
 	    	"description" : "Please be reminded",
-	    	"content" : "<size=+8><align=center>Hello! This is your welcome notification. Thank you for signing up!</align></size><br><br>\nFrom time to time, this app will display notifications to remind you to take actions based on the schedule you downloaded.  Right now, let’s start with an introductory survey.\n\n<align=center>Take note of your ID number:</align>\n<align=center><size=+18><b><#80ff80><<SUBJECT_ID>></color></b></size></align>\n<align=center>Tap this</align>\n<align=center><link=\"SURVEY\"><size=+18><#80ff80><u>Survey Link</u></color></size></link></align>\n<align=center>and enter in your ID number</align>\n\nThen complete the measures and you’ll be all ready to continue."
+	    	"content" : "<size=+8><align=center>Hello! This is your welcome notification. Thank you for signing up!</align></size><br><br>\nFrom time to time, this app will display notifications to remind you to take actions based on the schedule you downloaded.  Right now, let’s start with an introductory survey.\n\n<align=center>Take note of your ID number:</align>\n<align=center><size=+18><b><#80ff80><<SUBJECT_ID>></color></b></size></align>\n<align=center>Tap this</align>\n<align=center><link=\"SURVEY\"><size=+18><#80ff80><u>Survey Link</u></color></size></link></align>\n<align=center>and enter in your ID number</align>\n\nThen complete the measures and you’ll be all ready to continue.",
 			"type" : "ScheduleOnce",
 			"offsetFromDesiredTime" : {
 				"days" : 1
