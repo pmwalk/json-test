@@ -1,6 +1,6 @@
 {
-    "id" : "Test Schedule",
-    "title" : "Test_Schedule",
+    "id" : "Test_Schedule",
+    "title" : "Your Schedule",
     "removalSettings" : {
 		"title" : "Test Schedule Removal",
 		"description" : "Removing this will kill all reminders from the test schedule",
