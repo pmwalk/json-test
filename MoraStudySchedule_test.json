@@ -1,17 +1,17 @@
 {
-    "id" : "Test_Schedule",
-    "title" : "Your Schedule",
+    "id" : "StudySchedule",
+    "title" : "Study Schedule",
     "removalSettings" : {
 		"title" : "Schedule Removal",
-		"description" : "Removing this will kill all reminders from your schedule",
+		"description" : "Removing this will stop all future reminders from this schedule",
 		"phrase" : "Confirm removal"
 	},
     "configurations" : {
         "fields" : [
             {
                 "id" : "SUBJECT_ID",
-                "displayName" : "Your ID Here",
-                "defaultValue" : "1"
+                "displayName" : "Your participant ID here",
+                "defaultValue" : "0"
             }
         ],
         "displayOrder" : [
@@ -26,32 +26,146 @@
     ],
 	"notifications" : [
 		{
-	    	"id" : "FirstNotification",
-	    	"title" : "This is your first notification!",
-	    	"description" : "Initial notification is available",
-	    	"content" : "<size=+8><align=center>Hello! This is your welcome notification. Thank you for signing up!</align></size><br><br>\nFrom time to time, this app will display notifications to remind you to take actions based on the schedule you downloaded.  Right now, let’s start with an introductory survey.\n\n<align=center>Take note of your ID number:</align>\n<align=center><size=+18><b><#80ff80><<SUBJECT_ID>></color></b></size></align>\n<align=center>Tap this</align>\n<align=center><link=\"SURVEY\"><size=+18><#80ff80><u>Survey Link</u></color></size></link></align>\n<align=center>and enter in your ID number</align>\n\nThen complete the measures and you’ll be all ready to continue.",
+	    	"id" : "BaselineAssessmentReminder",
+	    	"title" : "Baseline Assessment Notification",
+	    	"description" : "An introduction to the study is available for viewing!",
+	    	"content" : "<size=+8><align=center>Hi and welcome to the study! From time to time this app will display reminders to be sure to use your assigned app, and to complete your weekly assessments. The assessments won't take very long, and once completed will trigger our payment process, so it is important that you complete them fully. Right now, let's start with the BASELINE ASSESSMENT.<br><br><align=center>Tap this</align><br><align=center><link=\"SURVEY\"><size=+18><#80ff80><u>Survey Link</u></color></size></link></align><br><br><align=center>and enter in your ID number: <<SUBJECT_ID>>.</align> Then complete the measures and you'll be all ready to continue with the study. If you have any questions, ask any of the study staff who are with you right now.",
 			"type" : "ScheduleOnce",
 			"offsetFromStartTime" : {
-				"minutes" : 1
+				"minutes" : 0
 	    	},
 			"lifetime" : {
-				"hours" : 10
+				"days" : 3
 			}
 		},
 		{
-	    	"id" : "Reminder",
+	    	"id" : "UseItReminderWeek1",
 	    	"title" : "Study Reminder",
-	    	"description" : "Please be reminded",
-	    	"content" : "<size=+8><align=center>Hello! This is your welcome notification. Thank you for signing up!</align></size><br><br>\nFrom time to time, this app will display notifications to remind you to take actions based on the schedule you downloaded.  Right now, let’s start with an introductory survey.\n\n<align=center>Take note of your ID number:</align>\n<align=center><size=+18><b><#80ff80><<SUBJECT_ID>></color></b></size></align>\n<align=center>Tap this</align>\n<align=center><link=\"SURVEY\"><size=+18><#80ff80><u>Survey Link</u></color></size></link></align>\n<align=center>and enter in your ID number</align>\n\nThen complete the measures and you’ll be all ready to continue.",
+	    	"description" : "Remember to log into the app!",
+	    	"content" : "Hi! This is a friendly reminder to log into the MORA app at least a few times this week as part of the study. We hope you're finding the app to be useful. If you have any questions call JACK.",
 			"type" : "ScheduleOnce",
 			"offsetFromDesiredTime" : {
-				"days" : 1
+				"days" : 3
 	    	},
 			"lifetime" : {
-				"hours" : 12
-			},
-			"interval" : {
-				"days" : 1
+				"days" : 4
+			}
+		},
+		{
+			"id" : "AssessmentReminderWeek1",
+	    	"title" : "Assessment Reminder - Week 1",
+	    	"description" : "Week 1 assessment reminder",
+	    	"content" : "<size=+8><align=center>Hi! It's time for you to complete your WEEK 1 assessment.</align></size><br><br>To do this, just tap this <br><br><align=center><link=\"SURVEY\"><size=+18><#80ff80><u>Survey Link</u></color></size></link></align><br><br><align=center>and enter in your ID number, which is <<SUBJECT_ID>>.</align><br><br>Please make sure you fill the survey out completely, or your response will not be propely recorded. Remember, once we receive you WEEK 1 assessment we can send out your reimbursement check for that assessment.",
+			"type" : "ScheduleOnce",
+			"offsetFromDesiredTime" : {
+				"days" : 7
+	    	},
+			"lifetime" : {
+				"days" : 3
+			}
+		},
+		{
+			"id" : "UseItReminderWeek2",
+	    	"title" : "Study Reminder",
+	    	"description" : "Remember to log into the app!",
+	    	"content" : "<size=+8><align=center>Hi! Welcome to the second week of the study.</align></size><br><br>This is a friendly reminder to log into the MORA app at least a few times this week as part of the study. We hope you're finding the app to be useful. If you have any questions call JACK.",
+			"type" : "ScheduleOnce",
+			"offsetFromDesiredTime" : {
+				"days" : 10
+	    	},
+			"lifetime" : {
+				"days" : 4
+			}
+		},
+		{
+			"id" : "AssessmentReminderWeek2",
+	    	"title" : "Assessment Reminder - Week 2",
+	    	"description" : "Week 2 assessment reminder",
+	    	"content" : "<size=+8><align=center>Hi! It's time for you to complete your WEEK 2 assessment.</align></size><br><br>To do this, just tap this <br><br><align=center><link=\"SURVEY\"><size=+18><#80ff80><u>Survey Link</u></color></size></link></align><br><br><align=center>and enter in your ID number, which is <<SUBJECT_ID>>.</align><br><br>Please make sure you fill the survey out completely, or your response will not be propely recorded. Remember, once we receive you WEEK 1 assessment we can send out your reimbursement check for that assessment.",
+			"type" : "ScheduleOnce",
+			"offsetFromDesiredTime" : {
+				"days" : 14
+	    	},
+			"lifetime" : {
+				"days" : 3
+			}
+		},
+		{
+			"id" : "UseItReminderWeek3",
+	    	"title" : "Study Reminder",
+	    	"description" : "Remember to log into the app!",
+	    	"content" : "<size=+8><align=center>Greetings and welcome to the third week of the study.</align></size><br><br>Please remember to log into the MORA app at least a few times this week as part of the study. If you have any questions call JACK.",
+			"type" : "ScheduleOnce",
+			"offsetFromDesiredTime" : {
+				"days" : 17
+	    	},
+			"lifetime" : {
+				"days" : 4
+			}
+		},
+		{
+			"id" : "AssessmentReminderWeek3",
+	    	"title" : "Assessment Reminder - Week 3",
+	    	"description" : "Week 3 assessment reminder",
+	    	"content" : "<size=+8><align=center>Hi -- It's time to log in and complete your WEEK 3 assessment.</align></size><br><br>To do this, just tap this <br><br><align=center><link=\"SURVEY\"><size=+18><#80ff80><u>Survey Link</u></color></size></link></align><br><br><align=center>and enter in your ID number, which is <<SUBJECT_ID>>.</align><br><br>Please make sure you fill the survey out completely, or your response will not be propely recorded. Remember, once we receive you WEEK 1 assessment we can send out your reimbursement check for that assessment.",
+			"type" : "ScheduleOnce",
+			"offsetFromDesiredTime" : {
+				"days" : 21
+	    	},
+			"lifetime" : {
+				"days" : 3
+			}
+		},
+		{
+			"id" : "UseItReminderWeek4",
+	    	"title" : "Study Reminder",
+	    	"description" : "Remember to log into the app!",
+	    	"content" : "<size=+8><align=center>Greetings and welcome to the fourth week of the study.</align></size><br><br>Please remember to log into the MORA app at least a few times this week as part of the study. If you have any questions call JACK.",
+			"type" : "ScheduleOnce",
+			"offsetFromDesiredTime" : {
+				"days" : 24
+	    	},
+			"lifetime" : {
+				"days" : 4
+			}
+		},
+		{
+			"id" : "AssessmentReminderWeek4",
+	    	"title" : "Assessment Reminder - Week 4",
+	    	"description" : "Week 4 assessment reminder",
+	    	"content" : "<size=+8><align=center>Hi -- It's time to log in and complete your WEEK 4 assessment.</align></size><br><br>To do this, just tap this <br><br><align=center><link=\"SURVEY\"><size=+18><#80ff80><u>Survey Link</u></color></size></link></align><br><br><align=center>and enter in your ID number, which is <<SUBJECT_ID>>.</align><br><br>Please make sure you fill the survey out completely, or your response will not be propely recorded. Remember, once we receive you WEEK 1 assessment we can send out your reimbursement check for that assessment.<br><br>This will be your last assessment for awhile. In two months, you will be asked to complete a final, follow-up assessment. Thank you!",
+			"type" : "ScheduleOnce",
+			"offsetFromDesiredTime" : {
+				"days" : 28
+	    	},
+			"lifetime" : {
+				"days" : 3
+			}
+		},
+		{
+			"id" : "FollowUpReminder",
+	    	"title" : "Follow-up Reminder",
+	    	"description" : "Reminder of upcoming follow-up assessment",
+	    	"content" : "<size=+8><align=center>Hello! This is a friendly reminder that your fifth and FINAL assessment is coming up next month.</align></size><br><br>Similar to previous surveus, when the reminder arrives, you just need to tap the link provided and enter your ID number: <<SUBJECT_ID>>. remember, once we receive your FINAL assessment we can send out your final reimbursement check for the study! Thanks for being in our study. If you have questions, call LUKE or JACK.",
+			"type" : "ScheduleOnce",
+			"offsetFromDesiredTime" : {
+				"days" : 58
+	    	},
+			"lifetime" : {
+				"days" : 3
+			}
+		},
+		{
+			"id" : "FinalAssessment",
+	    	"title" : "Final Assessment",
+	    	"description" : "Time for your final assessment!",
+	    	"content" : "<size=+8><align=center>Hello! It's time to complete your fifth and FINAL assessment as part of the study!</align></size><br><br>To do this, just tap the <br><br><align=center><link=\"SURVEY\"><size=+18><#80ff80><u>Survey Link</u></color></size></link></align><br><br><align=center>and enter in your ID number: <<SUBJECT_ID>>.</align><br><br>Remember, once we receive your FINAL assessment we can send out your final reimbursement check for the study! Thanks for being in our study. If you have questions, call LUKE or JACK.",
+			"type" : "ScheduleOnce",
+			"offsetFromDesiredTime" : {
+				"days" : 88
+	    	},
+			"lifetime" : {
+				"days" : 3
 			}
 		}
 	]
