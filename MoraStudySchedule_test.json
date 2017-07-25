@@ -11,7 +11,7 @@
             {
                 "id" : "SUBJECT_ID",
                 "displayName" : "Your participant ID here",
-                "defaultValue" : "0"
+                "defaultValue" : ""
             }
         ],
         "displayOrder" : [
