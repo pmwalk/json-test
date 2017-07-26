@@ -17,7 +17,7 @@
         "displayOrder" : [
             "SUBJECT_ID"
         ]
-    },
+    }
 	"notifications" : [
 		{
 	    	"id" : "FirstNotification",
