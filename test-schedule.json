@@ -1,0 +1,62 @@
+{
+    "id" : "TestSchedule",
+    "title" : "Test Schedule",
+    "removalSettings" : {
+		"title" : "Schedule Removal",
+		"description" : "Removing this will stop all future reminders from this schedule",
+		"phrase" : "Confirm removal"
+	},
+    "configurations" : {
+        "fields" : [
+            {
+                "id" : "SUBJECT_ID",
+                "displayName" : "Your participant ID here",
+                "defaultValue" : ""
+            }
+        ],
+        "displayOrder" : [
+            "SUBJECT_ID"
+        ]
+    },
+	"notifications" : [
+		{
+	    	"id" : "FirstNotification",
+	    	"title" : "First Notification",
+	    	"description" : "Your first notification is available for viewing!",
+	    	"content" : "<size=+8><align=center>Hi, this is your first notification! Your second notification will appear in five minutes.",
+			"type" : "ScheduleOnce",
+			"offsetFromStartTime" : {
+				"minutes" : 1
+	    	},
+			"lifetime" : {
+				"days" : 3
+			}
+		},
+    	{
+	    	"id" : "FirstNotification",
+	    	"title" : "First Notification",
+	    	"description" : "Your first notification is available for viewing!",
+	    	"content" : "<size=+8><align=center>Hi, this is your second notification! Your third notification will appear in five minutes.",
+			"type" : "ScheduleOnce",
+			"offsetFromStartTime" : {
+				"minutes" : 5
+	    	},
+			"lifetime" : {
+				"days" : 3
+			}
+		},
+    	{
+	    	"id" : "FirstNotification",
+	    	"title" : "First Notification",
+	    	"description" : "Your first notification is available for viewing!",
+	    	"content" : "<size=+8><align=center>Hi, this is your final notification! Thank you for using this app.",
+			"type" : "ScheduleOnce",
+			"offsetFromStartTime" : {
+				"minutes" : 10
+	    	},
+			"lifetime" : {
+				"days" : 3
+			}
+		}
+	]
+}
