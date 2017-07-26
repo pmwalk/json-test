@@ -17,7 +17,13 @@
         "displayOrder" : [
             "SUBJECT_ID"
         ]
-    }
+    },
+    "links" : [
+        {
+            "id" : "TEST",
+            "url" : "https://www.apple.com"
+        }
+    ],
 	"notifications" : [
 		{
 	    	"id" : "FirstNotification",
