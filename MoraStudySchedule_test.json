@@ -44,7 +44,7 @@
 	    	"description" : "Remember to log into the app!",
 	    	"content" : "Hi! This is a friendly reminder to log into the MORA app at least a few times this week as part of the study. We hope you're finding the app to be useful. If you have any questions call JACK.",
 			"type" : "ScheduleOnce",
-			"offsetFromDesiredTime" : {
+			"offsetFromStartTime" : {
 				"days" : 3
 	    	},
 			"lifetime" : {
