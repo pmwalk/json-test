@@ -29,7 +29,7 @@
 	    	"id" : "SurveyLinkNotification",
 	    	"title" : "Survey Link Notification",
 	    	"description" : "Your Qualtrics survey link reminder is here!",
-	    	"content" : "If you ever forget the link to the weekly assessments, or no longer have it saved in the main schedule, you can use the following link to return:<br><br><align=center><link=\"SURVEY\"><size=+18><#80ff80><u>Survey Link</u></color></size></link></align><br><br><align=center>Your ID number is:<br><br><size=+14><b><<SUBJECT_ID>></b></size></align>",
+	    	"content" : "If you ever forget the link to the weekly assessments, or no longer have it saved in the main schedule, you can use the following link to return:<br><br><align=center><link=\"SURVEY\"><size=+18><#80ff80><u>Survey Link</u></color></size></link></align><br><br><align=center>Your Qualtrics ID number is:<br><br><size=+14><b><<SUBJECT_ID>></b></size></align>",
 			"type" : "ScheduleOnce",
 			"offsetFromStartTime" : {
 				"minutes" : 1
