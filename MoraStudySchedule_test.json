@@ -10,7 +10,7 @@
         "fields" : [
             {
                 "id" : "SUBJECT_ID",
-                "displayName" : "Your participant ID here",
+                "displayName" : "Enter your Qualtrics ID here (e.g., 51234)",
                 "defaultValue" : ""
             }
         ],
@@ -28,7 +28,7 @@
 		{
 	    	"id" : "SurveyLinkNotification",
 	    	"title" : "Survey Link Notification",
-	    	"description" : "An introduction to the study is available for viewing!",
+	    	"description" : "Your Qualtrics survey link reminder is here!",
 	    	"content" : "If you ever forget the link to the weekly assessments, or no longer have it saved in the main schedule, you can use the following link to return:<br><br><align=center><link=\"SURVEY\"><size=+18><#80ff80><u>Survey Link</u></color></size></link></align>",
 			"type" : "ScheduleOnce",
 			"offsetFromStartTime" : {
